@@ -50,6 +50,8 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
 
 ## Add empty folders to repos
 
+https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/gitkeep-push-empty-folders-git-commit
+
 1. To add an empty folder, we have to use .gitkeep
 
    ```shell
@@ -60,3 +62,6 @@ https://docs.github.com/en/get-started/importing-your-projects-to-github/importi
    gitkeep@example:~$ git commit -m "Commit empty folder in Git with gitkeep"
    gitkeep@example:~$ git push origin
    ```
+
+
+https://www.youtube.com/watch?v=46_0Re1iEIM
