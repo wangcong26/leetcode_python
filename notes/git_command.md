@@ -63,5 +63,11 @@ https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/gi
    gitkeep@example:~$ git push origin
    ```
 
-
 https://www.youtube.com/watch?v=46_0Re1iEIM
+
+## Add all to Git
+
+```shell
+(venv) (base) congwang@Congs-MacBook-Pro notes % git add -A 
+```
+
