@@ -1,5 +1,5 @@
 import itertools
-
+import functools
 
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
@@ -20,6 +20,16 @@ class Solution:
         print(my_list)
         return all(x == y for x, y in itertools.zip_longest(F(s), F(t)))
 
+    def backspaceCompare2(self,s:str, t:str) -> bool:
+        def back(res, c):
+            if c!='#':
+                res.append(c)
+            elif res:
+                res.pop()
+            return res
+        return functools.reduce(back, s, []) == functools.reduce(back, t, [])
+
+
 
 if __name__ == '__main__':
     a = 'ab##c'
@@ -28,3 +38,6 @@ if __name__ == '__main__':
     solution = Solution()
     res = solution.backspaceCompare(a, b)
     print(res)
+
+    res2 = solution.backspaceCompare2(a, b)
+    print(res2)
