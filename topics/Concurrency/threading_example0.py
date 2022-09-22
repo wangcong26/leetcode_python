@@ -1,5 +1,5 @@
 import time
-import threading
+import threading_example0
 
 start = time.perf_counter()
 def do_something():
